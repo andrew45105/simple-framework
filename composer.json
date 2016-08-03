@@ -14,7 +14,8 @@
     "league/route": "^2.0",
     "pyrocms/lex": "2.2.*",
     "phpunit/phpunit": "5.4.*",
-    "zendframework/zend-diactoros": "^1.3"
+    "zendframework/zend-diactoros": "^1.3",
+    "andrew45105/simple-framework-core": "dev-master"
   },
   "autoload": {
     "psr-4": {

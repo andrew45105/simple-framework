@@ -4,9 +4,46 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e111e64f7806466cfa5aa4fd27284701",
-    "content-hash": "9ccd686bbdc0571b7ffa3a954d733842",
+    "hash": "5ff7133561af38144d58d03b422da91f",
+    "content-hash": "f802f751ceba9eeecdefe96c22ef8f59",
     "packages": [
+        {
+            "name": "andrew45105/simple-framework-core",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andrew45105/simple-framework-core.git",
+                "reference": "9bdc6c4691043c1203ea31c783e5ef28a30b746f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andrew45105/simple-framework-core/zipball/9bdc6c4691043c1203ea31c783e5ef28a30b746f",
+                "reference": "9bdc6c4691043c1203ea31c783e5ef28a30b746f",
+                "shasum": ""
+            },
+            "require": {
+                "phpunit/phpunit": "5.4.*"
+            },
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "App\\": "src/",
+                    "Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andrey Antonov",
+                    "email": "apologboy@gmail.com"
+                }
+            ],
+            "description": "Source code (handlers, services, helpers) for andrew45105/simple-framework",
+            "time": "2016-08-03 12:06:57"
+        },
         {
             "name": "container-interop/container-interop",
             "version": "1.1.0",
@@ -1658,7 +1695,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "andrew45105/simple-framework-core": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
