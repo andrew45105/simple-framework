@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5ff7133561af38144d58d03b422da91f",
+    "hash": "00c31ef2d14c8e151b20208c06b593ca",
     "content-hash": "f802f751ceba9eeecdefe96c22ef8f59",
     "packages": [
         {
@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/andrew45105/simple-framework-core.git",
-                "reference": "9bdc6c4691043c1203ea31c783e5ef28a30b746f"
+                "reference": "c80c664feba1fdeb60b75b8a81550b980e425eeb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andrew45105/simple-framework-core/zipball/9bdc6c4691043c1203ea31c783e5ef28a30b746f",
-                "reference": "9bdc6c4691043c1203ea31c783e5ef28a30b746f",
+                "url": "https://api.github.com/repos/andrew45105/simple-framework-core/zipball/c80c664feba1fdeb60b75b8a81550b980e425eeb",
+                "reference": "c80c664feba1fdeb60b75b8a81550b980e425eeb",
                 "shasum": ""
             },
             "require": {
@@ -27,7 +27,7 @@
             "type": "project",
             "autoload": {
                 "psr-4": {
-                    "App\\": "src/",
+                    "Andrew45105\\SFC\\": "src/",
                     "Tests\\": "tests/"
                 }
             },
@@ -42,7 +42,7 @@
                 }
             ],
             "description": "Source code (handlers, services, helpers) for andrew45105/simple-framework",
-            "time": "2016-08-03 12:06:57"
+            "time": "2016-08-04 13:01:23"
         },
         {
             "name": "container-interop/container-interop",
@@ -932,12 +932,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-message.git",
-                "reference": "85d63699f0dbedb190bbd4b0d2b9dc707ea4c298"
+                "reference": "d0aabc038f1f3ff665dfe1e9673bcd0df609c681"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-message/zipball/85d63699f0dbedb190bbd4b0d2b9dc707ea4c298",
-                "reference": "85d63699f0dbedb190bbd4b0d2b9dc707ea4c298",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/d0aabc038f1f3ff665dfe1e9673bcd0df609c681",
+                "reference": "d0aabc038f1f3ff665dfe1e9673bcd0df609c681",
                 "shasum": ""
             },
             "require": {
@@ -965,6 +965,7 @@
                 }
             ],
             "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
             "keywords": [
                 "http",
                 "http-message",
@@ -973,7 +974,7 @@
                 "request",
                 "response"
             ],
-            "time": "2015-05-04 20:22:00"
+            "time": "2016-08-03 19:47:37"
         },
         {
             "name": "pyrocms/lex",

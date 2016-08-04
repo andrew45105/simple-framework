@@ -1,23 +1,27 @@
 <?php
 
-namespace App\Controller;
+namespace Andrew45105\SF\Controller;
 
+use Andrew45105\SFC\Controller\WebController;
 use Lex\Parser;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Message\ResponseInterface;
 
 /**
  * Class IndexController
- * routing GET "/" requests
+ *
+ * Routing GET "/" requests
+ *
+ * @package Andrew45105\SF\Controller
  */
-class IndexController
+class IndexController extends WebController
 {
 
     public function indexAction(ServerRequestInterface $request, ResponseInterface $response)
     {
-        $parser = new Parser();
-        $template = $parser->parse(
-            file_get_contents(__DIR__.'/../Resources/views/index/index.lex'),
+        $template = $this->getTemplate(
+            __DIR__,
+            'index',
             [
                 'data' => [
                     'h1' => 'Its index page!',
@@ -25,14 +29,15 @@ class IndexController
                 ],
             ]
         );
-        return $response->getBody()->write($template);
+        $response->getBody()->write($template);
+        
     }
 
     public function otherAction(ServerRequestInterface $request, ResponseInterface $response)
     {
-        $parser = new Parser();
-        $template = $parser->parse(
-            file_get_contents(__DIR__.'/../Resources/views/index/other.lex'),
+        $template = $this->getTemplate(
+            __DIR__,
+            'other',
             [
                 'data' => [
                     'h1' => 'Its other page!',
@@ -40,7 +45,7 @@ class IndexController
                 ],
             ]
         );
-        return $response->getBody()->write($template);
+        $response->getBody()->write($template);
     }
 
 }
