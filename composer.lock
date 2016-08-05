@@ -13,16 +13,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/andrew45105/simple-framework-core.git",
-                "reference": "c80c664feba1fdeb60b75b8a81550b980e425eeb"
+                "reference": "c2f17b210b982e92b88058d0984835d7a7585528"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andrew45105/simple-framework-core/zipball/c80c664feba1fdeb60b75b8a81550b980e425eeb",
-                "reference": "c80c664feba1fdeb60b75b8a81550b980e425eeb",
+                "url": "https://api.github.com/repos/andrew45105/simple-framework-core/zipball/c2f17b210b982e92b88058d0984835d7a7585528",
+                "reference": "c2f17b210b982e92b88058d0984835d7a7585528",
                 "shasum": ""
             },
             "require": {
-                "phpunit/phpunit": "5.4.*"
+                "phpunit/phpunit": "5.4.*",
+                "pyrocms/lex": "2.2.*"
             },
             "type": "project",
             "autoload": {
@@ -42,7 +43,7 @@
                 }
             ],
             "description": "Source code (handlers, services, helpers) for andrew45105/simple-framework",
-            "time": "2016-08-04 13:01:23"
+            "time": "2016-08-05 11:21:48"
         },
         {
             "name": "container-interop/container-interop",
