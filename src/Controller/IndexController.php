@@ -21,7 +21,6 @@ class IndexController extends WebController
     {
         $template = $this->getTemplate(
             __DIR__,
-            'index',
             [
                 'data' => [
                     'h1' => 'Its index page!',
@@ -37,7 +36,6 @@ class IndexController extends WebController
     {
         $template = $this->getTemplate(
             __DIR__,
-            'other',
             [
                 'data' => [
                     'h1' => 'Its other page!',
