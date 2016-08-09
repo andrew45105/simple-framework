@@ -42,7 +42,7 @@ class IndexControllerTest extends PHPUnit_Framework_TestCase
         $data = curl_exec($ch);
         curl_close($ch);
 
-        $this->assertContains('Its index page', $data);
+        $this->assertContains('Index Page', $data);
     }
     
 }
