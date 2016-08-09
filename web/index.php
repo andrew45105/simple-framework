@@ -18,20 +18,17 @@ $container->share('emitter', Zend\Diactoros\Response\SapiEmitter::class);
 
 $route = new League\Route\RouteCollection($container);
 
+
 /* Add your route rules here */
 
 $route->group('/', function ($route) {
-    $route->map(
-        'GET',
-        '/',
-        'Andrew45105\SF\Controller\IndexController::indexAction'
-    );
-    $route->map(
-        'GET',
-        '/other',
-        'Andrew45105\SF\Controller\IndexController::otherAction'
-    );
+    $route->map('GET', '/', 'Andrew45105\SF\Controller\IndexController::indexAction');
 });
+$route->group('/article', function ($route) {
+    $route->map('GET', '/', 'Andrew45105\SF\Controller\ArticleController::indexAction');
+    $route->map('GET', '/get/{id}', 'Andrew45105\SF\Controller\ArticleController::articleAction');
+});
+
 
 $response = $route->dispatch($container->get('request'), $container->get('response'));
 

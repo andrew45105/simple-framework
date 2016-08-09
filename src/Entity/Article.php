@@ -13,6 +13,7 @@ class Article
 {
     /**
      * @var $id
+     * @DBPrimaryKey
      */
     protected $id;
 

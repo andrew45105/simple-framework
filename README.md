@@ -11,8 +11,7 @@ Simple web-framework with pyrocms/lex-templating & league/route-routing system
 ##Installation:
 * clone
 * composer update
-
-##Using
+* write your own settings in app/config/parameters.conf
 
 ##Tests
 * phpunit
