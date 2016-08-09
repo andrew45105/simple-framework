@@ -51,7 +51,7 @@ class ArticleController extends WebController
     {
         $id = $args['id'];
         
-        if (!is_int($id) || $id < 1) {
+        if (is_int($id) && $id > 0) {
 
             $article = $this->articleHelper->getById($id);
             
